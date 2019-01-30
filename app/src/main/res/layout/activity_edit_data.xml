@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/text_id_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/title_edit"
+            android:textSize="50px"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/baris1"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_below="@+id/text_id_barang"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/textbaris1"
+            android:layout_width="220px"
+            android:layout_height="match_parent"
+            android:text="Nama : "
+            android:textSize="50px"
+            />
+        <EditText
+            android:id="@+id/editText_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:background="#aaa"
+            >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/baris2"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_below="@+id/baris1"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/textbaris2"
+            android:layout_width="220px"
+            android:layout_height="match_parent"
+            android:text="Biaya : "
+            android:textSize="50px"
+            />
+        <EditText
+            android:id="@+id/editText_stok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:background="#aaa"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/baris3"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_below="@+id/baris2"
+        android:layout_marginTop="15dp"
+        ><TextView
+        android:id="@+id/textbaris3"
+        android:layout_width="220px"
+        android:layout_height="match_parent"
+        android:text="Stok : "
+        android:textSize="50px"
+        />
+        <EditText
+            android:id="@+id/editText_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="10"
+            android:background="#aaa"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/baris4"
+        android:layout_marginTop="15dp"
+        >
+        <Button
+            android:id="@+id/button_save_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tombol_edit"
+            />
+
+        <Button
+            android:id="@+id/button_cancel_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tombol_cancel"
+            />
+    </LinearLayout>
+</LinearLayout>
